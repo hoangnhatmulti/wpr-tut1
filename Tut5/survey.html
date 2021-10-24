@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="survey.css"/>
+<link rel="stylesheet" href="reset.css"/>
+<title>survey</title>
+</head>
+
+<body>
+	<header>
+		<h1>Survey Form</h1>
+	</header>
+	<section>
+		<div class="container">
+			<div id="description">
+				<p>Let us know how we can improve freeCodeCamp</p>
+			</div>
+			<form id="survey-form">
+				<div class="row-tab">
+				<div class="label-tab">
+					<label>Name</label>
+				</div>
+				<div class="input-tab">
+					<input type="text" name="Name">
+				</div>
+				</div>
+				<div class="row-tab">
+				<div class="label-tab">
+					<label>Email</label>
+				</div>
+				<div class="input-tab">
+					<input type="email" name="Email">
+				</div>
+				</div>
+				<div class="row-tab">
+				<div class="label-tab">
+					<label>Age</label>
+				</div>
+				<div class="input-tab">
+					<input type="number" name="Age">
+				</div>
+				</div>
+				<div class="row-tab">
+					<div class="label-tab">
+						<label>Which option best describes your current role?</label>
+					</div>
+					<div class="select-tab">
+						<select id="select-box">
+							<option>Student</option>
+						</select>
+					</div>
+				</div>
+				<div>
+					<div class="row-tab">
+						<label>How likely that you would recommend freeCodeCamp to a friend?</label>
+					</div>
+					<div class="input-tab">
+						<div>
+						<input type="radio" name="suggest"><label>Definitely</label></div>
+						<div><input type="radio" name="suggest"><label>Maybe</label></div>
+						<div><input type="radio" name="suggest"><label>Not sure</label></div>
+					</div>
+				</div>
+				<div class="row-tab">
+					<div class="label-tab">
+						<label>
+							What do you like most in FCC
+						</label>
+					</div>
+					<div class="select-tab">
+						<select id="select-box">
+						<option>Select an option</option>
+						</select>
+					</div>
+				</div>
+				<div class="row-tab">
+					<div class="label-tab">
+						<label>Things that should be improved in the future (Check all that apply)</label>
+					</div>
+					<div class="input-tab">
+						<div><input type="radio" name="project" value="Front-end"><label>Front-end Project</label></div>
+						<div><input type="radio" name="project" value="Back-end"><label>Back-end Project</label></div>			<div><input type="radio" name="project" value="Data Visualization"><label>Data Visualization</label></div>		
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+</body>
+</html>
