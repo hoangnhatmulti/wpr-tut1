@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+}
+.html5 {
+	background-color: #151414;
+	color: white;
+}
+#number {
+	color: #CF5200;
+	display: inline;
+}
+.nav{
+	float: left;
+	list-style: none;
+	background-color: #454545;
+}
+.nav li{
+	display: inline-block;
+	padding-top: 0.5px; 
+	border-right: solid 0.5px;
+}
+.nav li a{
+	color: #fff;
+	margin-top: 15px;
+	padding: 5px 20px;
+	font-size: 14px;
+}
+.link{
+	
+}
+.container{
+	
+}

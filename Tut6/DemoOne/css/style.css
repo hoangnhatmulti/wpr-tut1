@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto Mono', monospace;
+}
+body {
+	margin: 0 auto;
+	min-width: 1000px;
+	max-width: 1400px;
+}
+#content {
+	float: left;
+	width: 40%;
+	line-height: 25px;
+}
+
+#topChoices {
+	float: left;
+	width: 30%;
+}
+#topChoices ul{
+	list-style-type: square;
+	line-height: 1.55;
+}
+nav {
+	float: left;
+	width: 30%;
+	text-decoration: none;
+}
+nav li{
+ 	display: block;
+	margin-bottom: 10px;
+	width: 80%;
+}
+nav li a {
+	border: 1px solid #a66;
+	padding: 10px 25px;
+	background-repeat: no-repeat;
+	display: block;
+	padding: 12px 10px;
+	text-align: center;
+	text-decoration: none;
+}
+footer {
+	clear: both;
+}
+header, footer, #content, #topChoices, nav{
+	padding: 20px;
+}
+header, footer{
+	border-top: 5px solid #a66;
+	border-bottom: 5px solid #a66;
+}
+header {
+	font-size: 26px;
+	text-align: center;
+	font-weight: bold;
+}
+h1, h2 {
+	font-size: 20px;
+}
+a {
+	color: #a66;
+}
+
+
+

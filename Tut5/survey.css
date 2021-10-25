@@ -1,12 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
-body{
-	font-family: Arial;
-	font-size: 16px;
-	margin: 0px;
-	background-color: rgb(5, 173, 162);
-	color: black;
-}
+
+
 #title {
 	background-color: rgb(5, 173, 162);
 	color: black;
@@ -51,8 +46,18 @@ body{
 #select-box {
 	padding: 5px 0px;
 }
-
-
-
+body{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	margin: 0px;
+	background-color: rgba(2,138,159,1.00);
+	color: black;
+}
+h1 {
+	text-align: center;
+	padding: 5px 0px;
+	font-weight: bold;
+	font-size: 30px;
+}
 
 

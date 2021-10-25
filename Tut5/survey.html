@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" href="survey.css"/>
 <link rel="stylesheet" href="reset.css"/>
+<link rel="stylesheet" href="survey.css"/>
 <title>survey</title>
 </head>
 
@@ -51,8 +51,8 @@
 						</select>
 					</div>
 				</div>
-				<div>
-					<div class="row-tab">
+				<div class="row-tab">
+					<div class="label-tab">
 						<label>How likely that you would recommend freeCodeCamp to a friend?</label>
 					</div>
 					<div class="input-tab">
@@ -80,9 +80,25 @@
 					</div>
 					<div class="input-tab">
 						<div><input type="radio" name="project" value="Front-end"><label>Front-end Project</label></div>
-						<div><input type="radio" name="project" value="Back-end"><label>Back-end Project</label></div>			<div><input type="radio" name="project" value="Data Visualization"><label>Data Visualization</label></div>		
+						<div><input type="radio" name="project" value="Back-end"><label>Back-end Project</label></div>			<div><input type="radio" name="project" value="Data Visualization"><label>Data Visualization</label></div>	
+						<div><input type="radio" name="project" value="Challengers"><label>Challengers</label></div><div><input type="radio" name="project" value="Open Source Community"><label>Open Source Community</label></div>
+						<div><input type="radio" name="project" value="Gitter help roams"><label>Gitter help roams</label></div>			<div><input type="radio" name="project" value="Videos"><label>Videos</label></div>
+						<div><input type="radio" name="project" value="City meetups"><label>City meetups</label></div>			<div><input type="radio" name="project" value="Wiki"><label>Wiki</label></div>
+						<div><input type="radio" name="project" value="Forum"><label>Forum</label></div>
+						<div><input type="radio" name="project" value="Additional Course"><label>Additional Course</label></div>
 					</div>
 				</div>
+				<div class="row-tab">
+				<div class="label-tab">
+					<label>Any comments or Suggestion?</label>
+				</div>
+				<div class="input-tab">
+					 <textarea name="comments" id="comments" class="form-input" cols="30" rows="3" placeholder="Enter your commments here..."></textarea>
+				</div>
+				</div>
+				<div id="button">
+                <button type="submit">Submit</button>
+                </div>				
 			</form>
 		</div>
 	</section>
