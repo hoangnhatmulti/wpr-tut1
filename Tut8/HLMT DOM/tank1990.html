@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<header></header>
+	<main>
+		<h1>Tank 1990</h1>
+		<div style="border: 1px solid black; height: 190px; width: 190px; background-color: black;">
+			<img id='tank' src="tank.png" style="position: absolute; top: 80px; left: 10px;" width="19" height="19">
+		</div>
+		<br>
+		<br><br><br>
+		<input type=button onClick=moveTank('moveUp') value='&#8593'>
+		<br>
+		<input type=button onClick=moveTank('moveLeft') value='&#8592'>
+		<input type=button onClick=moveTank('moveRight') value='&#8594'>
+		<br>
+		<input type=button onClick=moveTank('moveDown') value='&#8595'>		
+	</main>
+	<footer></footer>
+	<script>
+		function moveTank(str) {
+		var step=19; // change this to different step value
+		switch(str){
+		case "moveDown":
+		var x=document.getElementById('tank').offsetTop;
+		x= x + step;
+		document.getElementById('tank').style.top= x + "px";
+		break;
+
+		case "moveUp":
+		var x=document.getElementById('tank').offsetTop;
+		x= x - step;
+		document.getElementById('tank').style.top= x + "px";
+		break;
+
+		case "moveLeft":
+		var y=document.getElementById('tank').offsetLeft;
+		y= y - step;
+		document.getElementById('tank').style.left= y + "px";
+		break;
+
+		case "moveRight":
+		var y=document.getElementById('tank').offsetLeft;
+		y= y + step;
+		document.getElementById('tank').style.left= y + "px";
+		break;
+		}
+		}
+	</script>
+
+</body>
+</html>
