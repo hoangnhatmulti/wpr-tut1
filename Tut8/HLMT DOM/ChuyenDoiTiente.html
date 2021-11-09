@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+	
+<style>
+	*{
+		line-height: 26px;
+	}
+	#amount {
+		float: left;
+		width: 30%;
+	}
+	#fromCountry, #toCurrency {
+		float: left;
+		width: 25%;
+	}
+	#convert {
+		float: left;
+		width: 20%;
+	}
+	button {
+		background-color: blueviolet;
+		border: none;
+		text-align: center;
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		font-weight: bold;
+		color: white;
+	}
+</style>
+	
+<body>
+	<header></header>
+	<main>
+		<div id="amount">
+			<label>Amount</label>
+			<br>
+			<input type="number" id="input" placeholder="1">
+		</div>
+		<div id="fromCountry">
+			<label>From Currency</label>
+			<br>
+			<select name="countryOne" id="countryOne">
+				<option value="a">Vietnam</option>
+				<option value="b">USA</option>
+			</select>
+		</div>
+		<div id="toCurrency">
+			<label>To Currency</label>
+			<br>
+			<select name="CountryTwo" id="countryTwo">
+				<option value="b">USD</option>
+				<option value="a">VND</option>
+			</select>
+		</div>
+		<div id="convert">
+			<br>
+			<button onClick="convertCurrency()">Convert</button>
+		</div>
+		
+		<script>
+			function convertCurrency() {
+				let moneyInput = document.getElementById("input").value;
+				let countryOne = document.getElementById("countryOne").value;
+				let countryTwo = document.getElementById("countryTwo").value;
+				if (countryOne == countryTwo) {
+					alert(moneyInput);
+				}
+				if (countryOne == "a" && countryTwo == "b") {
+					alert(moneyInput/22500)
+				}
+				if (countryOne == "b" && countryTwo == "a") {
+					alert(moneyInput*22500)
+				}
+			}
+		</script>
+	</main>
+	<footer></footer>
+</body>
+</html>
