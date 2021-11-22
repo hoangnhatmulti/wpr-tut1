@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How To Convert From Feet To Meters Using Javascript</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        background: white;
+    }
+</style>
+<body>
+<body>
+<div class="container">
+    <br/><br/>
+    <div class="text-center">
+        <h1 id="color" style="color: white;">Convert From Feet To Meters Using Javascript</h1>
+    </div>
+
+    <div class="well">
+        <p>
+            <label>Feet</label>
+            <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+        </p>
+        <p>Meters: <span id="outputMeters"></span></p>
+
+        <script>
+            function LengthConverter(valNum) {
+                document.getElementById("outputMeters").innerHTML=valNum/3.2808;
+            }
+        </script>
+
+    </div>
+</div>
+</body>
+</html>
