@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+	
+<body>
+	<form>
+        <input type="number" name ="a" id="a" placeholder= "Enter number a"> <br>
+        <input type="number" name ="b" id="b" placeholder= "Enter number b"> <br>
+        <input type="button" value="Result" onclick="calculate(n)">
+        <h2 id="a"></h2>
+        <h3 id="b"></h3>
+
+    <script>
+    function calculate(n){
+    let sum = 0;
+    for (let i = 0; i < n.length; i++){
+        sum += n[i];
+    }
+    return sum;
+    }
+    document.getElementById("sum").innerText = "Result: "+ sum;
+
+</body>
+</html>
